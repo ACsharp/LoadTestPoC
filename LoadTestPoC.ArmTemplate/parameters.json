@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachinePrefix": {
+            "value": "LT"
+        },
+        "virtualMachineCount": {
+            "value": 3
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "LoadTestAdmin"
+        },
+        "virtualNetworkName": {
+            "value": "LoadTestPoC-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "ltnic"
+        },
+        "networkSecurityGroupName": {
+            "value": "LT1-nsg"
+        },
+        "adminPassword": {
+            "value": "BryantPark2!"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "loadtestpocdiag718"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/loadtestpocdiag718"
+        },
+        "addressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "LT-ip-"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "dbcollation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "databaseName": {
+            "value": "LoadTestData"
+        },
+        "dbedition": {
+            "value": "Basic"
+        },
+        "dbmaxSizeBytes": {
+            "value": "104857600"
+        },
+        "dbrequestedServiceObjectiveId": {
+            "value": "dd6d99bb-f193-4ec1-86f2-43d3bccbc49c"
+        },
+        "dbsampleName": {
+            "value": ""
+        },
+        "dbserverName": {
+            "value": "loadtestsql"
+        },
+        "sites_LoadTestTargetApp_name": {
+            "value": "LoadTestTargetApp"
+        },
+        "serverfarm1": {
+            "value": "LoadTestServerFarm"
+        },
+        "config_web_name": {
+            "value": "LoadTestTargetApp/web"
+        },
+        "hostNameBindings1": {
+            "value": "LoadTestTargetApp/loadtesttargetapp.azurewebsites.net"
+        },
+        "publicVmPrefix": {
+            "value": "LoadTestPoC-acl"
+        }
+    }
+}
